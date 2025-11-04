@@ -1,12 +1,23 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voice AI Widget</title>
+  <title>Widget Test (Live)</title>
+  <link rel="stylesheet" href="voice-widget.css">
 </head>
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+
+  <h3>My Widget Test Page</h3>
+  <p>The AI chat widget should appear below this line:</p>
+
+  <div id="voice-widget-root"></div>
+
+  <script>
+    window.VOICE_WIDGET_CONFIG = {
+      apiUrl: 'https://voice-demo-production.up.railway.app'
+    };
+  </script>
+  
+  <script src="voice-widget.js"></script>
+
 </body>
 </html>
