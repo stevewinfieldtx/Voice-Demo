@@ -1,0 +1,28 @@
+VOICE AI WIDGET - GETTING STARTED
+==================================
+
+PROJECT LOCATION: /workspace/voice-ai-widget
+
+QUICK START:
+1. Read QUICKSTART.md for 5-minute setup
+2. Get API keys from OpenRouter and Eleven Labs
+3. Deploy backend to Railway (see docs/DEPLOYMENT.md)
+4. Build frontend: cd frontend/widget && npm run build
+5. Embed widget on your site (see docs/EMBEDDING.md)
+
+KEY FILES:
+- README.md - Complete project overview
+- QUICKSTART.md - Fast setup guide
+- docs/DEPLOYMENT.md - Railway deployment
+- docs/EMBEDDING.md - Widget embedding
+- backend/server.js - API server
+- frontend/widget/src/components/VoiceWidget.tsx - Widget component
+
+FEATURES:
+- Voice input via Web Speech API
+- Text input for all browsers
+- AI chat via OpenRouter
+- Voice output via Eleven Labs
+- Embeddable on any website
+
+For detailed information, see PROJECT_SUMMARY.md

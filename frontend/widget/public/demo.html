@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice AI Widget Demo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .feature-list {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        .feature-list h2 {
+            margin-top: 0;
+        }
+        .feature-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #4ade80;
+        }
+        .instructions {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        .instructions h2 {
+            margin-top: 0;
+            color: #667eea;
+        }
+        .instructions code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Voice AI Widget Demo</h1>
+        <p>Welcome to the Voice AI Widget demonstration. This widget enables natural voice conversations with an AI assistant.</p>
+        
+        <div class="feature-list">
+            <h2>Features</h2>
+            <ul>
+                <li>Voice input using browser's Speech Recognition API</li>
+                <li>Text input as an alternative</li>
+                <li>AI responses powered by OpenRouter</li>
+                <li>Natural voice output via Eleven Labs</li>
+                <li>Conversation history</li>
+                <li>Compact, embeddable design</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>How to Use</h2>
+            <p>Look for the blue chat button in the bottom-right corner. Click it to open the widget!</p>
+            <ol>
+                <li>Click the chat button to open the widget</li>
+                <li>Click the microphone icon and speak, or type your message</li>
+                <li>The AI will respond with text and voice</li>
+                <li>Continue the conversation naturally</li>
+            </ol>
+            
+            <h2>Browser Requirements</h2>
+            <p>For voice input, use Chrome, Edge, or Safari. Text input works in all modern browsers.</p>
+        </div>
+    </div>
+
+    <!-- Voice AI Widget -->
+    <div id="voice-widget-root"></div>
+    
+    <!-- Widget Configuration -->
+    <script>
+        window.VOICE_WIDGET_CONFIG = {
+            // Update this with your Railway backend URL
+            apiUrl: 'http://localhost:3000'
+        };
+    </script>
+    
+    <!-- In development, the widget will be loaded via Vite dev server -->
+    <!-- In production, use the built files from dist/ -->
+</body>
+</html>

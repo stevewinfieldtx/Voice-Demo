@@ -1,0 +1,27 @@
+{
+  "todos": {
+    "Coordinator": {
+      "1": {
+        "id": "1",
+        "content": "Get Supabase credentials",
+        "details": "User chose Railway deployment instead - backend will be self-deployed",
+        "status": "completed",
+        "priority": "high"
+      },
+      "2": {
+        "id": "2",
+        "content": "Get API keys from user",
+        "details": "Request OpenRouter API key and Eleven Labs API key from the user",
+        "status": "completed",
+        "priority": "high"
+      },
+      "3": {
+        "id": "3",
+        "content": "Build fullstack voice AI conversation widget for Railway deployment",
+        "details": "Create:\n- React widget frontend with voice recording and conversation UI\n- Node.js/Express backend with API endpoints for OpenRouter and Eleven Labs\n- Railway configuration files\n- Deployment guide with Railway setup instructions\n- Environment variables setup for API keys",
+        "status": "completed",
+        "priority": "high"
+      }
+    }
+  }
+}
